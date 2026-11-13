@@ -1,0 +1,12 @@
+{
+  "review_interval_days": {
+    "high": 120,
+    "medium": 270,
+    "low": 540
+  },
+  "volatility": {
+    "high_tags": ["ai", "llm", "tooling", "pricing"],
+    "low_tags": ["fundamentals", "theory"],
+    "low_types": ["decision"]
+  }
+}

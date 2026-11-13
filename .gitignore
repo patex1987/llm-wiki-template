@@ -1,0 +1,10 @@
+# Obsidian app config and plugins (per-device; plugin data can hold credentials)
+.obsidian/
+.trash/
+
+# Derived caches (rebuildable from Markdown)
+.kb/cache/
+__pycache__/
+*.pyc
+
+.DS_Store

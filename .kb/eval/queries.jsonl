@@ -1,0 +1,2 @@
+{"query": "why not just use RAG over my documents", "expect": ["LLM Wiki"]}
+{"query": "how does an agent add a new article to the wiki", "expect": ["LLM Wiki"]}
