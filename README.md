@@ -61,6 +61,14 @@ Design choices that go beyond the original note:
 - **Provenance discipline.** Source claims, synthesis, hypothetical examples and verified behavior are kept distinct; contradictions are recorded, not silently overwritten.
 - **Cheap retrieval.** `kb.py` ranks notes so the agent rarely reads the whole index; the log is append-only via `cat >>` and never loaded in full.
 
+## Requirements
+
+- `python3` (3.9+, standard library only) for `.kb/kb.py`
+- `git` for version history
+- Optional: [ripgrep](https://github.com/BurntSushi/ripgrep) (`rg`). The skills use it for fast exact-string lookups (finding a literal term, listing `index.md` section lines, counting recurring terms). Each skill also gives a plain `grep` fallback, so nothing breaks without it, but ripgrep is faster on larger wikis. Install with e.g. `brew install ripgrep` or `sudo apt install ripgrep`.
+
+Ranked search (`kb.py search`) is pure Python and does not need ripgrep.
+
 ## Quick start
 
 ```bash

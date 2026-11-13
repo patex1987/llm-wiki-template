@@ -45,7 +45,7 @@ The default failure is near-duplicate pages. **Extend before you create.**
 
 1. `python3 .kb/kb.py lint <every file you created or changed>` must report zero errors. Fix warnings for files you touched.
 2. Read the finished notes once as a reader would. A note that has every heading but does not explain the mechanism has not passed.
-3. Add new pages to `index.md` without loading the whole file: `rg -n '^## ' index.md` gives the section line numbers. Read only a few lines of the target section and insert one line: `- [[Note]] - <one-line description>`.
+3. Add new pages to `index.md` without loading the whole file: `rg -n '^## ' index.md` gives the section line numbers (without ripgrep: `grep -n '^## ' index.md`). Read only a few lines of the target section and insert one line: `- [[Note]] - <one-line description>`.
 4. Append a log entry with the shell, without reading `log.md` (it is large, and only its tail matters):
 
    ```bash

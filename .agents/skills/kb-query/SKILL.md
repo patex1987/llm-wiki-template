@@ -19,7 +19,7 @@ Stop at the first rung that gives enough evidence.
 2. **Card**: `kb.py card "<note>"` shows metadata, summary, section names, and sources without the body. Use it to choose between near hits.
 3. **Read**: open the 1-4 best notes in full. Prefer `status: stable`. Treat `needs-review` and `draft` as leads, not authority.
 4. **Expand**: `kb.py related "<note>"` shows links, backlinks, two-hop neighbours, and notes that share tags but are not linked. Open a neighbour only if the question needs it (comparison, prerequisite, trade-off).
-5. **Fallback**: `rg -n -i "<exact term>" concepts patterns decisions sources` for exact identifiers, config keys, or error strings that search tokenization may split.
+5. **Fallback**: `rg -n -i "<exact term>" concepts patterns decisions sources` for exact identifiers, config keys, or error strings that search tokenization may split. If `rg` is not installed, use `grep -rn -i "<exact term>" concepts patterns decisions sources`.
 
 For exploration requests ("what do I have on authorization?", "how do these relate?"), use `kb.py tags`, `kb.py search --tag <tag>`, and `kb.py related` and present the cluster as a short map: hub notes, how they relate, and gaps.
 

@@ -29,7 +29,7 @@ Pick 5-10 notes: recently changed ones (`kb.py lint --changed-since <date>` list
 - Does it explain the mechanism and its assumptions, or just restate headings?
 - Is it a near duplicate of another note? Compare with `kb.py related`, then propose merging or sharpening the scopes.
 - Is it doing two jobs? Propose a split.
-- Does the body mention a concept that recurs across notes but has no page? (`rg -c "<term>"` across notes indicates recurrence.)
+- Does the body mention a concept that recurs across notes but has no page? (`rg -c "<term>"` across notes indicates recurrence; without ripgrep use `grep -rc "<term>" concepts patterns decisions sources`.)
 
 ## 3. Record
 
